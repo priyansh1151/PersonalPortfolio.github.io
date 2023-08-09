@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+    <link rel="stylesheet" href="CSSFile.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header id="head">
+        <nav>
+            <div class="left">PRIYANSHU PORTFOLIO</div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contract">Contract</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </div>
+        </nav>
+        <header>
+
+            <main>
+                <section class="firstSection">
+                    <div class="leftSection">
+                        Hi, My name is <span class="name">Priyanshu</span>
+                        <div>And I am </div>
+                        <!-- Element to contain animated typing -->
+                        <span id="element"></span>
+                    </div>
+                    <div class="rightSection">
+                        <img src="developer.png" alt="">
+                    </div>
+                </section>
+            </main>
+
+            <!-- ----------------about------------------------- -->
+            <div id="About">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="portfolio.png" alt="">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>I am Currently a 4th year Student pursuing Electrical Engineering at Delhi Technological
+                                University
+                                with keen interest in Data Structures & Algorithms and Web Development. i am in search of
+                                any opportunity to implement my skills and explore this field.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('eduction')">Eduction</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Programming Languages</span><br>C/C++, Python, Basic of Java</li>
+                                    <li><span>Web Development</span><br>HTML, CSS, JavaScript (Front End Web Developer)</li>
+                                    <li><span>Computer Science Subjects</span><br>OOPS, DBMS, Operating System</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Final Year Student</span><br>Fresher</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="eduction">
+                                <ul>
+                                    <li><span>2020 - Current</span><br>B.TECH - Electrical Engineering from DELHI
+                                        TECHNOLOGICAL UNIVERSITY, Delhi India</li>
+                                    <li><span>2017 - 2019</span><br>10th and 12th passout from GBSSS, Delhi India</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- -------------Projects------------------ -->
+
+            <div id="projects">
+                <div class="container">
+                    <h1 class="pro-title">My Projects</h1>
+                    <div class="project-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Portfolio Website</h2>
+                            <p>A Portfolio Website Using HTML CSS JavaScript, The portfolio can have the same purpose as
+                                a CV. Most CVs are written with text, while
+                                the portfolio is for showcasing, so it is visual with images and often more detailed
+                                than the CV.</p>
+                            <a href="#">Learn more</a>
+                        </div>
+                        <div>
+
+                            <i class="fa-brands fa-app-store"></i>
+                            <h2>Tic-Tac-Toe Game</h2>
+                            <p>Create a Tic-Tac-Toe Game using HTML, CSS, JavaScript. We will be using
+                                validation checks to implement the game features. In the game, Player-1 starts playing
+                                the game and both players make
+                                their moves in consecutive turns. The player who makes a straight 3-block chain wins the
+                                game. This game is built on the front-end using simple logic and validation checks only.
+                            </p>
+                            <a href="#">Learn more</a>
+                        </div>
+                        <div>
+
+                            <i class="fa-sharp fa-solid fa-globe"></i>
+                            <h2>Create a Responsive Website</h2>
+                            <p>Create a Responsive Website Using HTML, CSS & JavaScript, to make a responsive navbar,
+                                then you will learn how to use HTML, CSS and JavaScript to display the dynamically
+                                menus, then you will learn how to display static numbers and als you will learn how to
+                                add parallax effect on each section.</p>
+                            <a href="#">Learn more</a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------contract------------------>
+            <div id="contract">
+                <div class="container">
+                    <div class="row">
+                        <div class="contract-left">
+                            <h1 class="sub-title">Contract Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i> kumarpriyanshu1151@gmail.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i> 9711979731</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/profile.php?id=100021348282230"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/__beingpriyansh__/"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/priyanshu-kumar-528983224/"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/priyansh1151"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <a href="Resume.pdf" download class="btn bt2">Download Resume</a>
+                        </div>
+
+                        <div class="contract-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright @ Priyanshu. Made <i class="fa-solid fa-heart"></i> My PORTFOLIO</p>
+                </div>
+            </div>
+
+            <script src="script.js"> </script>
+
+            <!-- // Setup and start animation!
+            //script tag -->
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+            <script>
+                var typed = new Typed('#element', {
+                    strings: ['Web Developer', 'Software Engineer'],
+                    typeSpeed: 50,
+                });
+
+            </script>
+</body>
+
+</html>
